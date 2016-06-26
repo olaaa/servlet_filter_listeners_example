@@ -13,11 +13,11 @@ public class MyServletContextListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
-        System.out.println(">> ServletContext created, contextPath = " + servletContextEvent.getServletContext().getContextPath());
+        System.out.println(">> [MyServletContextListener] ServletContext created, contextPath = " + servletContextEvent.getServletContext().getContextPath());
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
-        System.out.println(">> ServletContext destroyed");
+        System.out.println(">> [MyServletContextListener] ServletContext destroyed");
     }
 }

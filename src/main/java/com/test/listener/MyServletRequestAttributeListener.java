@@ -9,7 +9,6 @@ import javax.servlet.ServletRequestAttributeListener;
 public class MyServletRequestAttributeListener implements ServletRequestAttributeListener {
     @Override
     public void attributeAdded(ServletRequestAttributeEvent servletRequestAttributeEvent) {
-
     }
 
     @Override

@@ -9,11 +9,11 @@ import javax.servlet.ServletRequestListener;
 public class MyServletRequestListener implements ServletRequestListener {
     @Override
     public void requestDestroyed(ServletRequestEvent servletRequestEvent) {
-
+        System.out.println(">>[MyServletRequestListener] requestDestroyed");
     }
 
     @Override
     public void requestInitialized(ServletRequestEvent servletRequestEvent) {
-
+        System.out.println(">>[MyServletRequestListener] requestInitialized");
     }
 }

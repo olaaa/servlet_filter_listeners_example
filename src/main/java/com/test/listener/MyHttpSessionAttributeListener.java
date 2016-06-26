@@ -9,16 +9,16 @@ import javax.servlet.http.HttpSessionBindingEvent;
 public class MyHttpSessionAttributeListener implements HttpSessionAttributeListener {
     @Override
     public void attributeAdded(HttpSessionBindingEvent httpSessionBindingEvent) {
-
+        System.out.println(">>[MyHttpSessionAttributeListener] attributeAdded");
     }
 
     @Override
     public void attributeRemoved(HttpSessionBindingEvent httpSessionBindingEvent) {
-
+        System.out.println(">>[MyHttpSessionAttributeListener] attributeRemoved");
     }
 
     @Override
     public void attributeReplaced(HttpSessionBindingEvent httpSessionBindingEvent) {
-
+        System.out.println(">>[MyHttpSessionAttributeListener] attributeReplaced");
     }
 }

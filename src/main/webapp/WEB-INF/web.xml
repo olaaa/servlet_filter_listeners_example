@@ -11,6 +11,8 @@
     <servlet>
         <servlet-name>productController</servlet-name>
         <servlet-class>com.test.controller.ProductController</servlet-class>
+        <!--сервлет создатся при старте контейнера-->
+        <load-on-startup>10</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>productController</servlet-name>
@@ -110,7 +112,6 @@
     </filter-mapping>
 
 
-    <!-- LISTENERS
     <listener>
         <listener-class>com.test.listener.MyHttpSessionActivationListener</listener-class>
     </listener>
@@ -135,7 +136,6 @@
     <listener>
         <listener-class>com.test.listener.MyServletRequestListener</listener-class>
     </listener>
-    -->
 
     <session-config>
         <!-- minutes -->

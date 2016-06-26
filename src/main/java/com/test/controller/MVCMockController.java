@@ -25,6 +25,6 @@ public class MVCMockController extends HttpServlet {
         req.getSession().setAttribute("test", "session");
         req.getServletContext().setAttribute("test", "servletContext");
 
-        req.getRequestDispatcher("mvcMockView.jsp").forward(req, resp);
+        req.getRequestDispatcher("mvcMockView.jsp").forward(req, resp); // 200, не раскрывает свой путь
     }
 }

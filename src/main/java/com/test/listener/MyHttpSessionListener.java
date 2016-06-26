@@ -1,5 +1,7 @@
 package com.test.listener;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
@@ -9,11 +11,11 @@ import javax.servlet.http.HttpSessionListener;
 public class MyHttpSessionListener implements HttpSessionListener {
     @Override
     public void sessionCreated(HttpSessionEvent httpSessionEvent) {
-
+        System.out.println("[MyHttpSessionListener] sessionCreated");
     }
 
     @Override
     public void sessionDestroyed(HttpSessionEvent httpSessionEvent) {
-
+        System.out.println("[MyHttpSessionListener] sessionDestroyed");
     }
 }
